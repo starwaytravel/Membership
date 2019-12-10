@@ -21,7 +21,7 @@ namespace Membership.Controllers
             var ip = Dns.GetHostEntry(name).AddressList
                 .FirstOrDefault(x => x.AddressFamily == AddressFamily.InterNetwork);
 
-            return new string[] { "Membership Microservice is running", "API Version 2.1.2", "Container ID: " + name + " and " + "IP Address: " + ip.ToString() };
+            return new string[] { "Membership Microservice is running", "API Version 2.2.2", "Container ID: " + name + " and " + "IP Address: " + ip.ToString() };
         }
 
         // GET: api/HealthCheck/5
